@@ -1,7 +1,2 @@
 #!/bin/bash
-#make a temporary file to store the code
-temp_file=$(mktemp)
-echo "$PYCODE" > "$temp_file"
-# Run the python file
-python3 "$temp_file"
-# Clean up the temporary file
+python3 -c "$PYCODE"
